@@ -74,7 +74,7 @@ export default function Product() {
                     <h1 className='relative text-white z-20 text-[7vw] sm:text-[6vw] portrait:lg:text-[6vw] lg:text-[3.5vw] font-bold'>Our Products</h1>
                 </div>
                 <div className='min-h-[500px] grid grid-cols-5 lg:grid-cols-4 gap-2 lg:gap-4 py-5 lg:px-2 px-1'>
-                    <div className='col-span-2 lg:col-span-1 sticky top-24 h-fit px-1 sm:px-2 portrait:lg:px-1 lg:px-2 flex flex-col gap-4'>
+                    <div className='col-span-2 lg:col-span-1 sticky top-18 lg:top-24 h-fit px-1 sm:px-2 portrait:lg:px-1 lg:px-2 flex flex-col gap-4'>
                         <div className='relative'>
                             <input
                                 type="text"
