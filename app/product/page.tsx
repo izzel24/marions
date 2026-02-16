@@ -155,7 +155,7 @@ export default function Product() {
                                     <Image src={product.image} alt={product.title} fill className='object-cover ' />
                                 </div>
                                 <h1 className='text-[3.5vw] lg:text-[1.5vw]'>{product.title}</h1>
-                                <p className='text-[3vw] lg:text-[1vw]'>IDR. {product.price.toLocaleString("id-ID")}</p>
+                                {/* <p className='text-[3vw] lg:text-[1vw]'>IDR. {product.price.toLocaleString("id-ID")}</p> */}
                             </div>
                         ))}
                     </div>

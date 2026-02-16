@@ -27,8 +27,8 @@ export default function NavBar({}) {
             <Link href={'/'} className='flex items-center gap-[2vw] portrait:gap-[2vw] landscape:gap-[1.15vw] lg:gap-[1.15vw]'>
                 <img src="/logo.png" alt="Marion's Eksotik Logo" className='w-[8vw] portrait:w-[8vw] landscape:w-[3.5vw] lg:w-[3.5vw] ' />
                 <div className='flex flex-col  '>
-                    <p className='text-[4vw] portrait:text-[3.5vw] lg:text-[1.75vw] leading-none font-bold'>MARIONS EKSOTIK</p>
-                    <p className='text-[2.5vw] portrait:text-[2.75vw] lg:text-[1.2vw] portrait:leading-[max(10px,2vw)] leading-2 font-semibold'>Tenun</p>
+                    <p className='text-[4vw] portrait:text-[3.5vw] lg:text-[1.75vw] leading-none font-bold flex'>MARIONS EKSOTIK TENUN </p>
+                    {/* <p className='text-[2.5vw] portrait:text-[2.75vw] lg:text-[1.2vw] portrait:leading-[max(10px,2vw)] leading-2 font-semibold'>Tenun</p> */}
                 </div>
             </Link>
             <ul className='hidden sm:flex portrait:hidden landscape:flex gap-6 items-center '>

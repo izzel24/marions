@@ -84,33 +84,41 @@ export default function Home() {
           {/* <div className="inset-0 bg-[#75757513] absolute"/> */}
           <div className="flex flex-col font-playFair relative z-10 items-center w-full sm:gap-5 gap-2">
             <div className="text-white flex flex-col items-center justify-center">
-              <h1 className="text-[7.5vw] md:text-[7vw] portrait:lg:text-[7vw] lg:text-[5vw]">Marion&apos;s Eksotik Tenun</h1>
-              <i className="text-[5vw] md:text-[4vw] portrait:lg:text-[4vw] lg:text-[3.5vw]">&quot;One Design One Peace&quot;</i>
+              <h1 className="text-[7.5vw] md:text-[7vw] portrait:lg:text-[7vw] lg:text-[5vw] text-[#ecc587]">Marion&apos;s Eksotik Tenun</h1>
+              <i className="text-[5vw] md:text-[4vw] portrait:lg:text-[4vw] lg:text-[3.5vw]  text-[#ecc587]">&quot;One Design One Peace&quot;</i>
             </div>
-            <Link href="/product" className="px-[2.5vw] py-[1vw] lg:py-[.75vw] text-[3vw]  md:text-[2.5vw] portrait:lg:text-[2.5vw] lg:text-[1.25vw] bg-white">Explore Our Collections</Link>
+            <Link href="/product" className="px-[2.5vw] py-[1.5vw] lg:py-[.75vw] text-[3vw]  md:text-[2.5vw] portrait:lg:text-[2.5vw] lg:text-[1.25vw] bg-black text-[#ecc587]">Explore Our Collections</Link>
           </div>
           <div className=" w-full flex justify-center absolute z-20 sm:bottom-10 bottom-2 ">
             <div className="w-full flex justify-center gap-2">
             {slides.map((_, index) => (
-         
-                <div key={index} className={` ${index === visibleSlide ? "bg-white/80 sm:w-4 sm:h-2 w-3 h-1.5 " : "bg-white/40 w-1.5 h-1.5 sm:w-2 sm:h-2 "} rounded-full transition-all duration-300 ease-linear cursor-pointer` } onClick={() => setVisibleSlide(index)}/>
-          
+              <div key={index} className={` ${index === visibleSlide ? "bg-[#ecc587]/80 sm:w-4 sm:h-2 w-3 h-1.5 " : "bg-black/40 w-1.5 h-1.5 sm:w-2 sm:h-2 "} rounded-full transition-all duration-300 ease-linear cursor-pointer` } onClick={() => setVisibleSlide(index)}/>
             ))}
               </div>
           </div>
           <div className="flex justify-center gap-2 sm:gap-5 absolute bottom-2 sm:bottom-10 items-center right-2 sm:right-10">
-            <button className="rounded-full w-[8vw] sm:w-[7vw] portrait:lg:w-[7vw] lg:w-[3vw] h-[8vw] sm:h-[7vw] portrait:lg:h-[7vw] lg:h-[3vw] text-[4vw] sm:text-[3vw] portrait:lg:text-[3vw] lg:text-[1.25vw] border border-white text-white cursor-pointer hover:bg-gray-400/20 transition-all duration-750 ease-out flex justify-center items-center" onClick={() => handlePrevButton()}><IoMdArrowBack /></button>
-            <button className="rounded-full w-[8vw] sm:w-[7vw] portrait:lg:w-[7vw] lg:w-[3vw] h-[8vw] sm:h-[7vw] portrait:lg:h-[7vw] lg:h-[3vw] text-[4vw] sm:text-[3vw] portrait:lg:text-[3vw] lg:text-[1.25vw] border border-white text-white cursor-pointer hover:bg-gray-400/20 transition-all duration-750 ease-out flex justify-center items-center" onClick={() => handleNextButton()}><IoMdArrowForward /></button>
+            <button className="rounded-full w-[8vw] sm:w-[7vw] portrait:lg:w-[7vw] lg:w-[3vw] h-[8vw] sm:h-[7vw] portrait:lg:h-[7vw] lg:h-[3vw] text-[4vw] sm:text-[3vw] portrait:lg:text-[3vw] lg:text-[1.25vw] bg-[black] text-[#ecc587] cursor-pointer hover:bg-[#ecc587]/40 transition-all duration-750 ease-out flex justify-center items-center" onClick={() => handlePrevButton()}><IoMdArrowBack /></button>
+            <button className="rounded-full w-[8vw] sm:w-[7vw] portrait:lg:w-[7vw] lg:w-[3vw] h-[8vw] sm:h-[7vw] portrait:lg:h-[7vw] lg:h-[3vw] text-[4vw] sm:text-[3vw] portrait:lg:text-[3vw] lg:text-[1.25vw] bg-[black] text-[#ecc587] cursor-pointer hover:bg-[#ecc587]/40 transition-all duration-750 ease-out flex justify-center items-center" onClick={() => handleNextButton()}><IoMdArrowForward /></button>
           </div>
         </section>
-        <section className="min-h-[300px] font-playFair flex flex-col items-center pt-[5vw] portrait:lg:pt-[5vw] lg:pt-[2vw] gap-[1vw] px-[10vw] md:px-[9.5vw] portrait:lg:px-[9.5vw] lg:px-[8vw]">
+        <section className="min-h-[300px] font-playFair flex flex-col items-center py-[5vw] portrait:lg:pt-[5vw] lg:py-[2vw] gap-[1vw] px-[10vw] md:px-[9.5vw] portrait:lg:px-[9.5vw] lg:px-[8vw]">
           <h1 className="text-[6vw] portrait:lg:text-[5.5vw] lg:text-[3vw]">About Us</h1>
           <div className="flex flex-col ">
             <p className="text-justify text-[3.25vw] md:text-[2.75vw] portrait:lg:text-[2.75vw] lg:text-[1.5vw]">Marions Eksotik Tenun adalah brand fashion yang menghadirkan koleksi busana pria dan wanita dengan kombinasi Tenun Nusa Tenggara Timur (NTT). Menghadirkan karya eksklusif, di mana setiap model, penataan, dan komposisi tenun dalam satu busana dirancang berbeda dan tidak pernah kembar, meskipun menggunakan jenis kain yang serupa. <br />  <br /> Tradisi menenun telah dilakukan secara turun-temurun oleh berbagai suku di Nusa Tenggara Timur (NTT), khususnya oleh kaum perempuan. Dalam tradisi ini, seorang perempuan dianggap telah dewasa dan siap menikah apabila ia telah mampu menenun dengan baik. Proses menenun yang membutuhkan waktu lama, ketekunan, serta kesabaran menjadi tolok ukur kedewasaan seorang perempuan.
               <br />  Satu kain tenun dapat memakan waktu berbulan-bulan hingga bertahun-tahun dalam proses pembuatannya. Oleh karena itu, kain tenun NTT memiliki nilai yang tinggi. Setiap penenun juga memiliki cara dan ekspresi tersendiri dalam menciptakan motif, sehingga tidak ada kain tenun yang benar-benar sama.</p>
           </div>
         </section>
-        <section className="min-h-[3  00px] font-playFair flex flex-col items-center pt-[5vw] portrait:lg:pt-[5vw] lg:pt-[2vw] gap-[1vw] px-[10vw] md:px-[9.5vw] portrait:lg:px-[9.5vw] lg:px-[8vw]">
+        <section>
+          <div className="relative min-h-[150px] lg:min-h-[450px] flex items-center justify-center">
+            <img src="https://images.unsplash.com/photo-1660279582815-8d9a2b0d7e27?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"  alt="padar" className="w-full object-cover absolute h-[150px]  lg:h-[450px]" />
+            <div className="absolute inset-0 bg-gradient-to-l from-[#d78e5291] via-[#c2602459] to-[#7040225d] mix-blend-multiply backdrop-blur-[.5px] z-10" />
+            <div className="relative z-30 text-white font-playFair text-center px-5  flex flex-col gap-2 lg:gap-4">
+              <h1 className="text-[6.5vw] lg:text-[3.5vw]">Woven Tradition. Refined Style.</h1>
+              <h2 className="text-[4vw] lg:text-[1.75vw]">Elevating NTT Tenun into modern statement pieces.</h2>
+            </div>
+          </div>
+        </section>
+        <section className="min-h-[300px] font-playFair flex flex-col items-center pt-[5vw] portrait:lg:pt-[5vw] lg:pt-[2vw] gap-[1vw] px-[10vw] md:px-[9.5vw] portrait:lg:px-[9.5vw] lg:px-[8vw]">
           <h1 className="text-[6vw] portrait:lg:text-[5.5vw] lg:text-[3vw]">New Arrivals</h1>
           <CarouselComponent />
         </section>

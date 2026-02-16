@@ -7,7 +7,6 @@ import { IoMdArrowBack, IoMdArrowForward } from "react-icons/io"
 type newArrivals = {
     image: string,
     title: string,
-    price: string,
 }
 
 export default function CarouselComponent() {
@@ -33,27 +32,22 @@ export default function CarouselComponent() {
         {
             image: "/HeroImageMobile-Slide1.png",
             title: "Tenun Modern",
-            price: "400.000"
         },
         {
             image: "/HeroImageMobile-Slide2.png",
             title: "Elegant Collection",
-            price: "400.000"
         },
         {
             image: "/HeroImageMobile-Slide3.png",
             title: "Limited Edition",
-            price: "400.000"
         },
         {
             image: "/HeroImageMobile-Slide1.png",
             title: "Limited Edition",
-            price: "400.000"
         },
         {
             image: "/HeroImageMobile-Slide2.png",
             title: "Limited Edition",
-            price: "400.000"
         },
     ]
 
@@ -79,9 +73,9 @@ export default function CarouselComponent() {
                                 <h2 className="font-semibold text-[3.5vw] sm:text-[3vw] portrait:lg:text-[2.5vw] lg:text-[1.75vw]">
                                     {item.title}
                                 </h2>
-                                <p className="text-[3vw] sm:text-[2.5vw] portrait:lg:text-[2vw] lg:text-[1.25vw]">
+                                {/* <p className="text-[3vw] sm:text-[2.5vw] portrait:lg:text-[2vw] lg:text-[1.25vw]">
                                     IDR. {item.price}
-                                </p>
+                                </p> */}
                             </div>
 
                         </div>
