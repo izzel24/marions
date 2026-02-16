@@ -109,12 +109,12 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <div className="relative min-h-[150px] lg:min-h-[450px] flex items-center justify-center">
-            <img src="https://images.unsplash.com/photo-1660279582815-8d9a2b0d7e27?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"  alt="padar" className="w-full object-cover absolute h-[150px]  lg:h-[450px]" />
+          <div className="relative min-h-[150px] md:h-[250px] lg:min-h-[450px] flex items-center justify-center">
+            <img src="https://images.unsplash.com/photo-1660279582815-8d9a2b0d7e27?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"  alt="padar" className="w-full object-cover absolute h-[150px] md:h-[250px]  lg:h-[450px]" />
             <div className="absolute inset-0 bg-gradient-to-l from-[#d78e5291] via-[#c2602459] to-[#7040225d] mix-blend-multiply backdrop-blur-[.5px] z-10" />
             <div className="relative z-30 text-white font-playFair text-center px-5  flex flex-col gap-2 lg:gap-4">
-              <h1 className="text-[6.5vw] lg:text-[3.5vw]">Woven Tradition. Refined Style.</h1>
-              <h2 className="text-[4vw] lg:text-[1.75vw]">Elevating NTT Tenun into modern statement pieces.</h2>
+              <h1 className="text-[6.5vw] portrait:lg:text-[4.5vw] lg:text-[3.5vw]">Woven Tradition. Refined Style.</h1>
+              <h2 className="text-[4vw] portrait:lg:text-[2.65vw] lg:text-[1.75vw]">Elevating NTT Tenun into modern statement pieces.</h2>
             </div>
           </div>
         </section>
